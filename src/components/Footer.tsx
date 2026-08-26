@@ -7,6 +7,7 @@ import { useState } from "react";
 const menuLinks = [
   { label: "브랜드 소개", href: "/brand" },
   { label: "브레인 프렌즈", href: "/brand#brainfriends" },
+  { label: "핵심 기능", href: "/features" },
 ];
 
 export default function Footer() {
@@ -72,7 +73,9 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="w-full lg:w-[524px] grid grid-cols-2 gap-x-[40px]">
+          {/* Figma 2309:36463 — 데스크톱은 메뉴/연락처를 gap 40 으로 붙여 우측 정렬(연락처 232px 고정).
+              모바일은 기존 2열 그리드 유지. */}
+          <div className="w-full lg:w-auto grid grid-cols-2 gap-x-[40px] lg:flex lg:gap-[40px]">
             <div className="flex flex-col gap-3 lg:gap-[12px] items-start">
               <h4 className="font-semibold text-[15px] lg:text-[18px] text-[#fed65b] leading-[28px]">
                 메뉴
@@ -90,7 +93,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-3 lg:gap-[12px] items-start">
+            <div className="flex flex-col gap-3 lg:gap-[12px] items-start lg:w-[232px]">
               <h4 className="font-semibold text-[15px] lg:text-[18px] text-[#fed65b] leading-[28px]">
                 연락처
               </h4>
@@ -110,6 +113,9 @@ export default function Footer() {
             © 2026 Golden Brain Care. All rights reserved.
           </p>
           <div className="flex flex-wrap gap-4 lg:gap-[24px] items-center">
+            <p className="font-medium text-[13px] lg:text-[18px] text-[rgba(255,255,255,0.5)] leading-[28px]">
+              사업자 등록 번호 : 293-87-03686
+            </p>
             <div className="flex gap-[10px] items-center">
               <div className="relative w-[18px] h-[18px] lg:w-[20px] lg:h-[20px] flex-shrink-0">
                 <Image
