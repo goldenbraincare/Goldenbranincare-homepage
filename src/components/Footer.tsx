@@ -34,7 +34,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-5 lg:gap-[24px] items-start max-w-full lg:max-w-[384px]">
             <p className="font-semibold text-[20px] lg:text-[24px] text-[#fed65b] leading-[32px]">
-              골든브레인케어
+              (주)골든브레인케어
             </p>
             <p className="font-normal text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.7)] leading-[1.7]">
               AI 기반 언어·인지 재활 솔루션으로 의사소통 회복과 지속 가능한
