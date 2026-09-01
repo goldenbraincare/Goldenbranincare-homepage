@@ -10,6 +10,10 @@ import HeroSlideshow from "@/components/HeroSlideshow";
 
 const gradientPink = "linear-gradient(135deg, #f5ab9b 0%, #f96a7c 100%)";
 
+// 브레인프렌즈 서비스(실제 앱). 홈페이지와 별도 도메인이라 next/link 가 아니라
+// <a> + target="_blank" 로 새 창에 띄운다. (Header.tsx 의 therapistReservationUrl 과 같은 방식)
+const brainFriendsServiceUrl = "https://brainfriends.goldenbraincare.com/";
+
 const values = [
   {
     icon: "/images/icon-value-expertise.svg",
@@ -253,13 +257,26 @@ export default function BrandPage() {
                     브레인프렌즈
                   </span>
                 </h2>
-                <Link
-                  href="/inquiry"
-                  className="text-white font-semibold text-[15px] lg:text-[16px] px-8 py-[18px] rounded-full shadow-[0px_20px_25px_-5px_rgba(245,171,155,0.3)] inline-flex items-center justify-center"
-                  style={{ backgroundImage: gradientPink }}
-                >
-                  도입 문의하기
-                </Link>
+                {/* 서비스 바로가기(보조) + 도입 문의하기(주). 좁은 화면에서는 줄바꿈된다. */}
+                <div className="flex flex-wrap items-center gap-3">
+                  <a
+                    href={brainFriendsServiceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-semibold text-[15px] lg:text-[16px] px-8 py-[18px] rounded-full inline-flex items-center justify-center border border-[rgba(255,255,255,0.35)] bg-[rgba(255,255,255,0.06)] transition-colors hover:bg-[rgba(255,255,255,0.14)]"
+                  >
+                    서비스 알아보기
+                  </a>
+                  {/* border-transparent — 옆의 아웃라인 버튼과 박스 높이를 맞추기 위한 것.
+                      없으면 테두리 2px 만큼 두 버튼 높이가 어긋난다(62 vs 60). */}
+                  <Link
+                    href="/inquiry"
+                    className="text-white font-semibold text-[15px] lg:text-[16px] px-8 py-[18px] rounded-full shadow-[0px_20px_25px_-5px_rgba(245,171,155,0.3)] inline-flex items-center justify-center border border-transparent"
+                    style={{ backgroundImage: gradientPink }}
+                  >
+                    도입 문의하기
+                  </Link>
+                </div>
               </FadeInUp>
 
               <FadeInUp delay={0.2} className="w-full max-w-[520px] mx-auto lg:mx-0 lg:max-w-none">
