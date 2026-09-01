@@ -257,7 +257,9 @@ export default function BrandPage() {
                     브레인프렌즈
                   </span>
                 </h2>
-                {/* 서비스 바로가기(보조) + 도입 문의하기(주). 좁은 화면에서는 줄바꿈된다. */}
+                {/* 바로가기(보조·링크 제공용) + 도입 문의하기(주). 좁은 화면에서는 줄바꿈된다.
+                    아직 정식 오픈 전이라 바로가기는 아웃라인으로 눌러 두고, 주 CTA 는
+                    도입 문의하기로 유지한다. */}
                 <div className="flex flex-wrap items-center gap-3">
                   <a
                     href={brainFriendsServiceUrl}
@@ -265,7 +267,7 @@ export default function BrandPage() {
                     rel="noopener noreferrer"
                     className="text-white font-semibold text-[15px] lg:text-[16px] px-8 py-[18px] rounded-full inline-flex items-center justify-center border border-[rgba(255,255,255,0.35)] bg-[rgba(255,255,255,0.06)] transition-colors hover:bg-[rgba(255,255,255,0.14)]"
                   >
-                    서비스 알아보기
+                    바로가기
                   </a>
                   {/* border-transparent — 옆의 아웃라인 버튼과 박스 높이를 맞추기 위한 것.
                       없으면 테두리 2px 만큼 두 버튼 높이가 어긋난다(62 vs 60). */}
