@@ -21,7 +21,9 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-[6px] bg-[rgba(250,248,247,0.95)] shadow-[0px_1px_1px_rgba(0,0,0,0.05)]">
-      <div className="max-w-[1280px] mx-auto px-5 md:px-10 lg:px-[80px] py-4 lg:py-[24px] flex items-center justify-between">
+      {/* Figma 3291:91536 — 헤더는 1920 폭에 좌우 패딩 80, 상하 24(로고 56 포함해 높이 104).
+          이전에는 max-w-[1280px] 로 묶어서 1920 화면에서 좌우 여백이 320 으로 벌어졌다. */}
+      <div className="max-w-[1920px] mx-auto px-5 md:px-10 lg:px-[80px] py-4 lg:py-[24px] flex items-center justify-between">
         <Link href="/" className="relative h-10 w-[110px] lg:h-[56px] lg:w-[155px] flex-shrink-0">
           <Image
             src="/images/logo.png"
