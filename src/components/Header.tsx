@@ -7,8 +7,8 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navLinks = [
-  { label: "브랜드 소개", href: "/brand" },
-  { label: "브레인프렌즈", href: "/brand#brainfriends" },
+  { label: "회사 소개", href: "/brand" },
+  { label: "브레인프렌즈", href: "/brain-friends" },
   { label: "기관 도입", href: "/institution" },
   { label: "문의", href: "/contact" },
 ];
@@ -56,7 +56,7 @@ export default function Header() {
             href={therapistReservationUrl}
             className="text-white font-bold text-[16px] tracking-[0.32px] px-[24px] py-[10px] rounded-[12px] whitespace-nowrap bg-[linear-gradient(135deg,#fac06c_0%,#f09b79_100%)]"
           >
-            재활사 예약
+            치료 예약
           </a>
         </nav>
 
@@ -66,7 +66,7 @@ export default function Header() {
             href={therapistReservationUrl}
             className="text-white font-bold text-[13px] px-3.5 py-2 rounded-[12px] whitespace-nowrap bg-[linear-gradient(135deg,#fac06c_0%,#f09b79_100%)]"
           >
-            재활사 예약
+            치료 예약
           </a>
           <button
             onClick={() => setOpen(!open)}

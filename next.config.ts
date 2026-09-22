@@ -1,17 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async redirects() {
-    return [
-      // /brain-friends 상세 페이지는 현재 비공개(접근 차단) — 브레인프렌즈 내용은 /brand 로 이동.
-      // 다시 공개하려면 이 항목을 제거하세요.
-      {
-        source: "/brain-friends",
-        destination: "/brand#brainfriends",
-        permanent: false,
-      },
-    ];
-  },
+  // /brain-friends 상세 페이지 재개통(2026-09-22).
+  // 회사 소개(/brand)를 Figma 시안 기반 13섹션으로 개편하면서 브레인프렌즈 콘텐츠를
+  // 다시 독립 라우트로 분리 — 헤더의 '브레인프렌즈' 링크가 여기로 이동.
 };
 
 export default nextConfig;
