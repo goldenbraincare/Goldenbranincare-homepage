@@ -5,7 +5,6 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FadeInUp from "@/components/animations/FadeInUp";
-import HeroSlideshow from "@/components/HeroSlideshow";
 
 const gradientPink = "linear-gradient(135deg, #f5ab9b 0%, #f96a7c 100%)";
 
@@ -27,7 +26,8 @@ export default function BrainFriendsPage() {
       <main className="flex flex-col w-full pt-[72px] lg:pt-[104px] bg-[#000c26]">
         <section className="w-full bg-[#000c26]">
           <div className="max-w-[1280px] mx-auto px-5 md:px-10 lg:px-[80px] py-14 lg:py-[96px]">
-            <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-x-[60px] lg:items-center mb-12 lg:mb-[72px]">
+            {/* 앱 화면 슬라이드쇼를 걷어내고 히어로를 1단 구성으로 정리(2026-09-22). */}
+            <div className="flex flex-col gap-8 max-w-[760px] mb-12 lg:mb-[72px]">
               <FadeInUp>
                 <p className="font-semibold text-[13px] text-[#fed65b] uppercase tracking-[2px] mb-4">
                   Our Product
@@ -65,10 +65,6 @@ export default function BrainFriendsPage() {
                     도입 문의하기
                   </Link>
                 </div>
-              </FadeInUp>
-
-              <FadeInUp delay={0.2} className="w-full max-w-[520px] mx-auto lg:mx-0 lg:max-w-none">
-                <HeroSlideshow />
               </FadeInUp>
             </div>
 
