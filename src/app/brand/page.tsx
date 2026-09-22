@@ -6,9 +6,15 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FadeInUp from "@/components/animations/FadeInUp";
+import LocationMap from "@/components/LocationMap";
 
 /* Figma reference: node 3247:61733 (1920px wide).
    섹션 순서/크기/색상 모두 Figma 시안 기준. */
+
+// geocoder 는 층·호수가 붙으면 검색에 실패할 수 있어, 지도용 주소는 도로명까지만 쓰고
+// 화면에는 층·호수까지 포함한 전체 주소를 보여준다.
+const CENTER_ADDRESS = "부산광역시 부산진구 동천로 116";
+const CENTER_ADDRESS_FULL = "부산 부산진구 동천로 116, 한신밴빌딩 5층 501호";
 
 const stats = [
   { value: "30,000+", label: "누적 임상 케이스" },
@@ -647,14 +653,15 @@ export default function BrandPage() {
                 <h2 className="font-bold text-[28px] lg:text-[48px] text-[#1e1b13] leading-[1.2] tracking-[-0.96px] mb-6 lg:mb-[32px]">
                   오시는 길
                 </h2>
-                {/* 지도 자리 - 빈 박스, 얇은 tan 테두리, radius 20 */}
+                {/* Figma 의 빈 박스 자리에 네이버 지도를 넣는다(2026-09-22). 테두리·radius 는 시안 유지. */}
                 <div
                   className="rounded-[20px] border overflow-hidden h-[280px] lg:h-[380px]"
                   style={{ borderColor: "rgba(147,113,52,0.35)" }}
-                  aria-label="지도 자리"
-                />
+                >
+                  <LocationMap address={CENTER_ADDRESS} label="골든브레인케어" />
+                </div>
                 <p className="font-medium text-[15px] lg:text-[20px] text-[#44474f] leading-[1.5] mt-4 lg:mt-[20px]">
-                  부산 부산진구 동천로 116, 한신밴빌딩 5층 501호
+                  {CENTER_ADDRESS_FULL}
                 </p>
               </FadeInUp>
 
