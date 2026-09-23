@@ -202,10 +202,13 @@ export default function BrandPage() {
                   </div>
                 </FadeInUp>
               ))}
-              {/* 8번째: CTA 카드 (bg rgba(143,106,31,0.1)) */}
+              {/* 8번째: CTA 카드 (bg rgba(143,106,31,0.1)).
+                  도입 문의가 아니라 '치료 예약하기' 와 같은 브레인톡톡 예약 사이트로 보낸다. */}
               <FadeInUp delay={symptoms.length * 0.05}>
-                <Link
-                  href="/inquiry"
+                <a
+                  href={RESERVATION_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-[16px] p-6 lg:p-[28px] h-full flex flex-col gap-2 lg:gap-[10px] transition-colors"
                   style={{ backgroundColor: "rgba(143,106,31,0.1)" }}
                 >
@@ -218,7 +221,7 @@ export default function BrandPage() {
                   <p className="mt-auto font-medium text-[14px] lg:text-[16px] text-[#8f6a1f]">
                     상담으로 확인하기 →
                   </p>
-                </Link>
+                </a>
               </FadeInUp>
             </div>
           </div>
