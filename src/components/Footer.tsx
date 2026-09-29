@@ -38,8 +38,9 @@ export default function Footer() {
               (주)골든브레인케어
             </p>
             <p className="font-normal text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.7)] leading-[1.7]">
-              AI 기반 언어·인지 재활 솔루션으로 의사소통 회복과 지속 가능한
-              재활 관리를 돕습니다.
+              AI 기반 언어·인지 재활 솔루션으로 의사소통 회복과
+              <br />
+              지속 가능한 재활 관리를 돕습니다.
             </p>
             <div className="flex gap-[12px] items-center">
               <Link href="/" className="relative w-[20px] h-[20px] flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity">

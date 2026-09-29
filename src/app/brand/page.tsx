@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -84,7 +85,7 @@ const therapists = [
 const milestones = [
   { year: "2026", label: "(주) 골든브레인케어 법인 설립" },
   { year: "", label: "GBC 기업부설연구소 설립" },
-  { year: "", label: "GBC 기업부설연구소 설립" },
+  { year: "", label: "벤처기업 인증" },
 ];
 
 // Figma 3255:64658 - 좌우 각 4개
@@ -248,11 +249,11 @@ export default function BrandPage() {
                 </p>
               </FadeInUp>
 
-              {/* 우측: 4스테이지 + 사이 3개 화살표 */}
-              <div className="flex items-start justify-between flex-1 gap-2 lg:gap-[16px] overflow-x-auto lg:overflow-visible">
+              {/* 우측: 4스테이지 + 사이 3개 화살표 (화살표는 두 원 사이 가운데) */}
+              <div className="flex items-start justify-between flex-1 overflow-x-auto lg:overflow-visible">
                 {lifeStages.map((s, i) => (
-                  <div key={s.title} className="flex items-start gap-2 lg:gap-[16px] flex-shrink-0">
-                    <FadeInUp delay={i * 0.08}>
+                  <Fragment key={s.title}>
+                    <FadeInUp delay={i * 0.08} className="flex-shrink-0">
                       <div className="flex flex-col items-center gap-3 lg:gap-[20px] w-[110px] lg:w-[180px]">
                         {/* 180×180 원 + 인물 이미지 */}
                         <div className="relative w-[110px] h-[110px] lg:w-[180px] lg:h-[180px]">
@@ -278,7 +279,7 @@ export default function BrandPage() {
                         </svg>
                       </div>
                     )}
-                  </div>
+                  </Fragment>
                 ))}
               </div>
             </div>
@@ -314,21 +315,19 @@ export default function BrandPage() {
                       transition={{ duration: 0.5, delay: 0.1 + i * 0.1 }}
                       className="flex items-center gap-3 lg:gap-[16px]"
                     >
-                      {/* 얇은 회색 원 + 체크 */}
+                      {/* akar-icons:check (Figma 3255:63399) */}
                       <svg
                         className="flex-shrink-0 w-6 h-6 lg:w-8 lg:h-8"
                         viewBox="0 0 32 32"
                         fill="none"
                         aria-hidden
                       >
-                        <circle cx="16" cy="16" r="15.25" stroke="#B8B8B8" strokeWidth="1.5" />
                         <path
-                          d="M10 16.5L14.5 21L22 12.5"
-                          stroke="#5C5C5C"
-                          strokeWidth="1.75"
+                          d="M5.33333 16L13.3333 24L26.6667 8"
+                          stroke="#8F6A1F"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          fill="none"
                         />
                       </svg>
                       <span className="font-medium text-[15px] lg:text-[20px] text-[#44474f] leading-[1.5]">
