@@ -26,7 +26,7 @@ export default function SolutionFlowSection() {
             재활의 모든 과정을 하나의 흐름으로.
           </p>
           <p className="font-medium text-[14px] sm:text-[15px] lg:text-[18px] text-[#44474f] text-center leading-[1.7]">
-            브레인 프렌즈는 자가진단부터 결과 관리까지 끊김 없는 디지털 재활
+            브레인프렌즈는 자가진단부터 결과 관리까지 끊김 없는 디지털 재활
             경험을 제공합니다.
           </p>
         </motion.div>

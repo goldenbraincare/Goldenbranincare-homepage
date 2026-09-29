@@ -101,7 +101,7 @@ export default function FeaturesPage() {
             </FadeInUp>
             <FadeInUp delay={0.16}>
               <p className="font-semibold text-[16px] lg:text-[20px] text-[#44474f] leading-[1.6] max-w-[768px]">
-                브레인 프렌즈는 자가진단부터 결과 관리까지,<br className="hidden sm:block" />
+                브레인프렌즈는 자가진단부터 결과 관리까지,<br className="hidden sm:block" />
                 재활에 필요한 기능을 하나로 연결합니다.
               </p>
             </FadeInUp>
@@ -165,7 +165,7 @@ export default function FeaturesPage() {
           <div className="max-w-[1200px] mx-auto py-12 flex flex-col items-center gap-10">
             <FadeInUp>
               <h2 className="font-bold text-[28px] lg:text-[40px] text-white text-center leading-[1.3] tracking-[-0.8px]">
-                브레인 프렌즈를 직접 확인해보세요
+                브레인프렌즈를 직접 확인해보세요
               </h2>
             </FadeInUp>
             <FadeInUp delay={0.1}>

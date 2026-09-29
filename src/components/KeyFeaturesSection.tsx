@@ -1,9 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { motion } from "framer-motion";
-import StepHoverModal from "./StepHoverModal";
 
 const features = [
   {
@@ -51,7 +49,6 @@ const features = [
 ];
 
 export default function KeyFeaturesSection() {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   return (
     <section className="w-full">
       <div className="max-w-[1280px] mx-auto px-5 md:px-10 lg:px-[80px] pt-10 pb-12 lg:pt-[64px] lg:pb-[104px]">
@@ -64,7 +61,7 @@ export default function KeyFeaturesSection() {
           className="flex flex-col items-center w-full mb-8 lg:mb-[40px]"
         >
           <h2 className="font-black text-[20px] lg:text-[24px] text-[#000c26] text-center leading-[28px]">
-            브레인 프렌즈 핵심 기능
+            브레인프렌즈 핵심 기능
           </h2>
         </motion.div>
 
@@ -78,8 +75,6 @@ export default function KeyFeaturesSection() {
               viewport={{ once: false, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              onMouseEnter={() => setHoveredCard(i)}
-              onMouseLeave={() => setHoveredCard(null)}
               className="bg-gradient-to-br from-white to-[#fffdf5] border border-[#ede8dc] flex flex-col gap-[4px] items-start rounded-[16px] lg:rounded-[20px] shadow-[0px_6px_20px_rgba(0,12,38,0.07)] cursor-default transition-all duration-200 p-6 lg:p-[40px] hover:border-[#fed65b] hover:shadow-[0px_16px_40px_rgba(0,12,38,0.12)]"
             >
               <div className="bg-[#fed65b]/25 rounded-[12px] lg:rounded-[14px] flex items-center justify-center w-[46px] h-[46px] lg:w-[52px] lg:h-[52px] flex-shrink-0 mb-1">
@@ -105,7 +100,6 @@ export default function KeyFeaturesSection() {
           ))}
         </div>
       </div>
-      <StepHoverModal stepIndex={hoveredCard} />
     </section>
   );
 }

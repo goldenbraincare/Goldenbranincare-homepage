@@ -1,0 +1,22 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="203" height="32" viewBox="0 0 203 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 46">
+<line id="Line 45" y1="16.5" x2="203" y2="16.5" stroke="url(#paint0_linear_0_5)" stroke-width="3"/>
+<g id="akar-icons:chevron-right-small">
+<rect x="91.5" y="1" width="30" height="30" rx="15" fill="white"/>
+<rect x="91.5" y="1" width="30" height="30" rx="15" stroke="#E7EBEE" stroke-width="2"/>
+<path id="Vector" d="M104.5 9L110.5 16L104.5 23" stroke="url(#paint1_linear_0_5)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_5" x1="0" y1="18.5" x2="203" y2="18.5" gradientUnits="userSpaceOnUse">
+<stop offset="0.00961538" stop-color="#4E85F1" stop-opacity="0"/>
+<stop offset="0.331731" stop-color="#4E85F1"/>
+<stop offset="0.629808" stop-color="#49C2AE"/>
+<stop offset="0.980769" stop-color="#49C2AE" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_5" x1="107.5" y1="9" x2="107.5" y2="23" gradientUnits="userSpaceOnUse">
+<stop stop-color="#49C2AE"/>
+<stop offset="1" stop-color="#4E85F1"/>
+</linearGradient>
+</defs>
+</svg>

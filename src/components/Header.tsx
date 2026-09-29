@@ -56,6 +56,8 @@ export default function Header() {
           </div>
           <a
             href={therapistReservationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white font-bold text-[16px] tracking-[0.32px] px-[24px] py-[10px] rounded-[12px] whitespace-nowrap bg-[linear-gradient(135deg,#fac06c_0%,#f09b79_100%)]"
           >
             치료 예약
@@ -66,6 +68,8 @@ export default function Header() {
         <div className="flex lg:hidden items-center gap-3">
           <a
             href={therapistReservationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white font-bold text-[13px] px-3.5 py-2 rounded-[12px] whitespace-nowrap bg-[linear-gradient(135deg,#fac06c_0%,#f09b79_100%)]"
           >
             치료 예약
