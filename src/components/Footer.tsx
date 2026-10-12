@@ -102,7 +102,7 @@ export default function Footer() {
                 부산 진구 동천로 116, 한신밴빌딩 5F
               </p>
               <p className="font-normal text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.7)] leading-[28px]">
-                brain_care@naver.com
+                brain_fd@naver.com
               </p>
             </div>
           </div>

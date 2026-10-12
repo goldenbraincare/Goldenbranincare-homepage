@@ -108,7 +108,7 @@ export default function InquiryPage() {
                     <h2 className="font-bold text-[24px] text-[#000c26]">문의가 접수되었습니다!</h2>
                     <p className="text-[16px] text-[#44474f] leading-[1.6]">
                       담당자가 확인 후 빠르게 연락드리겠습니다.<br />
-                      급하신 경우 <strong>brain_care@naver.com</strong>으로 연락해 주세요.
+                      급하신 경우 <strong>brain_fd@naver.com</strong>으로 연락해 주세요.
                     </p>
                     <button
                       onClick={() => { setSubmitted(false); setForm({ name: "", organization: "", phone: "", email: "", message: "" }); }}
@@ -200,7 +200,7 @@ export default function InquiryPage() {
                     </button>
                     {submitError && (
                       <p className="text-red-400 text-[14px] text-center">
-                        전송에 실패했습니다. 잠시 후 다시 시도하거나 brain_care@naver.com으로 연락해 주세요.
+                        전송에 실패했습니다. 잠시 후 다시 시도하거나 brain_fd@naver.com으로 연락해 주세요.
                       </p>
                     )}
                   </form>
@@ -234,12 +234,12 @@ export default function InquiryPage() {
                     </div>
                   </Link>
 
-                  <Link href="mailto:brain_care@naver.com" className="flex items-start gap-5 hover:opacity-80 transition-opacity">
+                  <Link href="mailto:brain_fd@naver.com" className="flex items-start gap-5 hover:opacity-80 transition-opacity">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src="/images/inquiry-icon-email.svg" alt="이메일" className="w-[44px] h-10 flex-shrink-0 object-contain" />
                     <div className="flex flex-col gap-0.5">
                       <p className="font-medium text-[14px] lg:text-[16px] tracking-[0.8px] uppercase" style={{ color: "#d4af37" }}>EMAIL</p>
-                      <p className="font-bold text-[14px] lg:text-[16px]" style={{ color: "#fff9ee" }}>brain_care@naver.com</p>
+                      <p className="font-bold text-[14px] lg:text-[16px]" style={{ color: "#fff9ee" }}>brain_fd@naver.com</p>
                     </div>
                   </Link>
 

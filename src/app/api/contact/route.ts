@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
 
   await transporter.sendMail({
     from: `"골든브레인케어 홈페이지" <${process.env.NAVER_EMAIL}>`,
-    to: "brain_care@naver.com",
+    to: "brain_fd@naver.com",
     replyTo: email,
     subject: `[도입 문의] ${organization ? `${organization} - ` : ""}${name}`,
     html: `

@@ -127,7 +127,7 @@ export default function CTASection() {
               )}
               {status === "error" && (
                 <p className="text-[14px] text-red-500 text-center w-full">
-                  필수 항목(이름·이메일·문의 내용)을 확인해 주세요. 문제가 계속되면 brain_care@naver.com으로 연락 바랍니다.
+                  필수 항목(이름·이메일·문의 내용)을 확인해 주세요. 문제가 계속되면 brain_fd@naver.com으로 연락 바랍니다.
                 </p>
               )}
             </form>

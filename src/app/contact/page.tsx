@@ -15,8 +15,8 @@ const contactCards = [
   {
     icon: "/images/contact-icon-email.svg",
     label: "이메일 문의",
-    value: "brain_care@naver.com",
-    href: "mailto:brain_care@naver.com",
+    value: "brain_fd@naver.com",
+    href: "mailto:brain_fd@naver.com",
   },
   {
     icon: "/images/contact-icon-phone.svg",
