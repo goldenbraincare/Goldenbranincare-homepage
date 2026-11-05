@@ -21,8 +21,8 @@ const contactCards = [
   {
     icon: "/images/contact-icon-phone.svg",
     label: "고객 지원 센터",
-    value: "0507-1379-3759",
-    href: "tel:050713793759",
+    value: "0507-1393-3759",
+    href: "tel:050713933759",
   },
 ];
 

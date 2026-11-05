@@ -225,12 +225,12 @@ export default function InquiryPage() {
 
                 {/* Contact items */}
                 <div className="flex flex-col gap-8">
-                  <Link href="tel:050713793759" className="flex items-start gap-5 hover:opacity-80 transition-opacity">
+                  <Link href="tel:050713933759" className="flex items-start gap-5 hover:opacity-80 transition-opacity">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src="/images/inquiry-icon-phone.svg" alt="전화" className="w-[42px] h-[42px] flex-shrink-0 object-contain" />
                     <div className="flex flex-col gap-0.5">
                       <p className="font-medium text-[14px] lg:text-[16px] tracking-[0.8px] uppercase" style={{ color: "#d4af37" }}>PHONE</p>
-                      <p className="font-bold text-[14px] lg:text-[16px]" style={{ color: "#fff9ee" }}>0507-1379-3759</p>
+                      <p className="font-bold text-[14px] lg:text-[16px]" style={{ color: "#fff9ee" }}>0507-1393-3759</p>
                     </div>
                   </Link>
 

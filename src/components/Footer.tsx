@@ -127,7 +127,7 @@ export default function Footer() {
                 />
               </div>
               <span className="font-bold text-[13px] lg:text-[18px] text-[rgba(255,255,255,0.5)] leading-[28px]">
-                0507-1379-3759
+                0507-1393-3759
               </span>
             </div>
             <p className="font-medium text-[13px] lg:text-[18px] text-[rgba(255,255,255,0.5)] leading-[28px]">
