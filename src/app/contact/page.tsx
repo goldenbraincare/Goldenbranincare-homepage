@@ -30,7 +30,7 @@ const locations = [
   {
     icon: "/images/contact-icon-hq.svg",
     title: "본사 (HQ)",
-    address: "부산 진구 동천로 116, 한신밴빌딩 501호",
+    address: "부산 부산진구 중앙대로 694, 쥬디스태화 9층 64호",
   },
   {
     icon: "/images/contact-icon-lab.svg",
@@ -167,7 +167,7 @@ export default function ContactPage() {
                   도입 문의하기
                 </Link>
                 <Link
-                  href="https://pf.kakao.com/_qpxkCn"
+                  href="https://pf.kakao.com/_KqSxnX"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold text-[18px] lg:text-[20px] text-white tracking-[0.32px] px-14 lg:px-16 py-5 lg:py-6 rounded-[12px] border-2 border-white min-w-[220px] text-center"

@@ -55,7 +55,7 @@ export default function CTASection() {
             </p>
             <div className="flex flex-wrap gap-3 items-start">
               <Link
-                href="https://pf.kakao.com/_qpxkCn"
+                href="https://pf.kakao.com/_KqSxnX"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#000c26] text-white font-semibold text-[14px] lg:text-[18px] px-6 py-3 lg:px-[32px] lg:py-[16px] rounded-[12px] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)] hover:bg-[#001540] transition-colors whitespace-nowrap inline-block"

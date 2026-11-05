@@ -211,7 +211,7 @@ export default function InstitutionPage() {
                   도입 문의하기
                 </Link>
                 <Link
-                  href="https://pf.kakao.com/_qpxkCn"
+                  href="https://pf.kakao.com/_KqSxnX"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold text-[18px] lg:text-[20px] text-white tracking-[0.32px] px-14 lg:px-16 py-5 lg:py-6 rounded-[12px] border-2 border-white min-w-[220px] text-center"

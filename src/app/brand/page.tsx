@@ -14,8 +14,8 @@ import LocationMap from "@/components/LocationMap";
 
 // geocoder 는 층·호수가 붙으면 검색에 실패할 수 있어, 지도용 주소는 도로명까지만 쓰고
 // 화면에는 층·호수까지 포함한 전체 주소를 보여준다.
-const CENTER_ADDRESS = "부산광역시 부산진구 동천로 116";
-const CENTER_ADDRESS_FULL = "부산 부산진구 동천로 116, 한신밴빌딩 5층 501호";
+const CENTER_ADDRESS = "부산광역시 부산진구 중앙대로 694";
+const CENTER_ADDRESS_FULL = "부산 부산진구 중앙대로 694 9층 64호";
 
 const stats = [
   { value: "30,000+", label: "누적 임상 케이스" },
@@ -106,7 +106,7 @@ const partnerLogos: { src: string; width: number; height: number }[] = [
 
 // 외부 예약 URL (헤더와 동일)
 const RESERVATION_URL = "https://braintalktalk.goldenbraincare.com/";
-const KAKAO_URL = "https://pf.kakao.com/_qpxkCn";
+const KAKAO_URL = "https://pf.kakao.com/_KqSxnX";
 
 export default function BrandPage() {
   return (

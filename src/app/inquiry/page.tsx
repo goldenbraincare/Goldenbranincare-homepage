@@ -256,7 +256,7 @@ export default function InquiryPage() {
                 {/* Kakao divider */}
                 <div className="border-t pt-10 flex items-center justify-center gap-4" style={{ borderColor: "rgba(255,255,255,0.1)" }}>
                   <Link
-                    href="https://pf.kakao.com/_qpxkCn"
+                    href="https://pf.kakao.com/_KqSxnX"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 hover:opacity-80 transition-opacity"
