@@ -99,7 +99,7 @@ export default function Footer() {
                 연락처
               </h4>
               <p className="font-normal text-[13px] lg:text-[16px] text-[#b2b6be] leading-[1.5]">
-                부산 부산진구 중앙대로 694 9층 64호
+                부산 부산진구 중앙대로 694 <span className="whitespace-nowrap">9층 64호</span>
               </p>
               <p className="font-normal text-[14px] lg:text-[18px] text-[rgba(255,255,255,0.7)] leading-[28px]">
                 brain_care@naver.com
