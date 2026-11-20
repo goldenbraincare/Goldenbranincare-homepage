@@ -34,8 +34,8 @@ const locations = [
   },
   {
     icon: "/images/contact-icon-lab.svg",
-    title: "연구실 (Lab)",
-    address: "부산 진구 중앙대로 694, 쥬디스태화 9F",
+    title: "티움",
+    address: "부산 진구 동천로 116, 한신밴빌딩 5F",
   },
 ];
 
